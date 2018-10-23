@@ -21,8 +21,9 @@ class AlgorithmViewController: UIViewController
     
     private func formatAlgorithm() -> Void
     {
+        //title variable
         let title: String = "How to pumpkin😈"
-        
+        //variable list being made
         let stepOne : String = "First you grab all materials for pumpkin doing!"
         let stepTwo : String = "Grab small blades or small drill tools and pumpkin"
         let stepThree : String = "Take pumpkin and cut a hole around the top to remove stem"
@@ -32,7 +33,7 @@ class AlgorithmViewController: UIViewController
         let stepSeven : String = "Cut out spooky mouth of pumpkin with sharp teeths."
         let stepEight : String = "Put a candle in your spooky pumpkin and put him outside to spook kids!"
         
-        //Creates an arrayList of the steps
+        //Creates an arrayList of the step variables
         let algorithm = [stepOne, stepTwo, stepThree, stepFour, stepFive, stepSix, stepSeven, stepEight]
         
         let attributesDictionary = [NSAttributedStringKey.font : algorithmText.font]
@@ -42,6 +43,7 @@ class AlgorithmViewController: UIViewController
         for step in algorithm
         {
             let bullet: String = "🎃"
+            //Interpolation of strings
             let formattedStep : String = "\n\(bullet) \(step)"
             let attributedStringStep: NSMutableAttributedString = NSMutableAttributedString(string: formattedStep)
             let outlineStyle = createOutlineStyle()
