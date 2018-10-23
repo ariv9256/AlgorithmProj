@@ -17,6 +17,7 @@ class AlgorithmViewController: UIViewController
     public override func viewDidLoad() -> Void
     {
         super.viewDidLoad()
+        formatAlgorithm()
     }
     
     private func formatAlgorithm() -> Void
